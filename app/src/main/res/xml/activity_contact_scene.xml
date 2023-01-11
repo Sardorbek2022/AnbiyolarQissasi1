@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:autoTransition="animateToEnd"
+        motion:duration="1400">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/telegram"
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="29dp"
+            motion:layout_constraintTop_toBottomOf="@id/toolbar"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/instagram"
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="29dp"
+            motion:layout_constraintTop_toBottomOf="@id/telegram"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/facebook"
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="29dp"
+            motion:layout_constraintTop_toBottomOf="@id/instagram"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/youtube"
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="29dp"
+            motion:layout_constraintTop_toBottomOf="@id/facebook"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="97dp"
+            android:layout_height="80dp"
+            motion:layout_constraintTop_toBottomOf="@id/youtube"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="27dp"
+            android:visibility="gone" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+</MotionScene>

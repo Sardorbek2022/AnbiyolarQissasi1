@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/book1"
+        android:icon="@drawable/open_book_ic"
+        android:title=""/>
+
+    <item
+        android:id="@+id/book2"
+        android:icon="@drawable/open_book_ic"
+        android:title=""/>
+
+    <item
+        android:id="@+id/book3"
+        android:icon="@drawable/open_book_ic"
+        android:title=""/>
+
+    <item
+        android:id="@+id/book4"
+        android:icon="@drawable/open_book_ic"
+        android:title=""/>
+
+    <item
+        android:id="@+id/book5"
+        android:icon="@drawable/open_book_ic"
+        android:title=""/>
+
+
+
+</menu>
